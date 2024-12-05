@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root{
+  --Green: hsl(75, 94%, 57%);
+  --White:hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  background-color: var(--Grey-900);
+  text-align: center;
+}
+
+.container, .media{
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  height: 600px;
+  width: 350px;
+  background-color: var(--Grey-800);
+  border-radius: 12px;
+  gap: 8px;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 12px;
+  height: 44%;
+}
+
+img{
+  align-self: center;
+  width: 81px;
+  border-radius: 50%;
+}
+
+.profile-info{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--Green);
+  font-size: 14px;
+  font-style: normal;
+}
+
+.profile-name{
+  color: white;
+  font-weight: 400;
+}
+
+.profile-location{
+  color: var(--Green);
+  font-size: 14px;
+  font-style: normal;
+}
+
+.quote{
+  color:white;
+  font-size: 14px;
+}
+
+.media{
+  gap: 16px;
+  align-items: center;
+}
+
+.media-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 44px;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--Grey-700);
+}
+
+.media-info:hover{
+  cursor: pointer;
+  color: var(--Grey-900);
+  background-color: var(--Green);
+  font-weight: 600;
+}
+
+.attribution{
+  position: fixed;
+  bottom: 30px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a{
+  color: white;
+}
